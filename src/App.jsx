@@ -74,7 +74,7 @@ function App() {
             </Grid>
           </Grid>
         </div>
-        <Container maxWidth="max" sx={{ mb: "3rem" }}>
+        <Container maxWidth="md" sx={{ mb: "3rem" }}>
           <Grid container spacing={4}>
             {cards.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>
