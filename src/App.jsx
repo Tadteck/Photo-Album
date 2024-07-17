@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <CssBaseline />
-      <AppBar position="relative">
+      <AppBar position="static">
         <Toolbar display={"flex"} justifyContent={"space-between"}>
           <PhotoCamera />
           <Typography variant="h6">PhotoAlbum</Typography>
@@ -74,6 +74,7 @@ function App() {
             </Grid>
           </Grid>
         </div>
+
         <Container maxWidth="md" sx={{ mb: "3rem" }}>
           <Grid container spacing={4}>
             {cards.map((card) => (
@@ -93,10 +94,12 @@ function App() {
                     />
                   </CardMedia>
                   <CardContent display="flex" align="center">
-                    <Typography sx={{fontSize:"25px"}} gutterBottom>product name</Typography>
+                    <Typography sx={{ fontSize: "25px" }} gutterBottom>
+                      product name
+                    </Typography>
                     <Typography sx={{ display: "flex", fontSize: "15px" }}>
-                      This is a product card which describes the product on that menu
-                      market card.
+                      This is a product card which describes the product on that
+                      menu market card.
                     </Typography>
                   </CardContent>
                   <CardActions sx={{ flexGrow: 1 }}>
@@ -113,12 +116,9 @@ function App() {
           </Grid>
         </Container>
       </main>
-      <footer style={{ backgroundColor: "grey", padding: "50px 0" }}>
-        <Typography variant="h6" align="center" gutterBottom>
-          @
-        </Typography>
+      <footer style={{ backgroundColor: "grey", padding: "20px 0" }}>
         <Typography variant="subtitle1" align="center" color="textSecondary">
-          copyrights by TadteckInc(Ltd)
+          copyrights by TadteckInc
         </Typography>
       </footer>
     </>
