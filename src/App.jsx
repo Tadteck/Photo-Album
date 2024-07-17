@@ -18,7 +18,7 @@ const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function App() {
   return (
-    <>
+    <div style={{ backgroundColor: "black" }}>
       <CssBaseline />
       <AppBar position="static">
         <Toolbar display={"flex"} justifyContent={"space-between"}>
@@ -29,7 +29,7 @@ function App() {
       <main>
         <div
           style={{
-            backgroundColor: "white",
+            backgroundColor: "beige",
             display: "flex",
             justifyContent: "center",
           }}
@@ -67,9 +67,12 @@ function App() {
               <Button
                 variant="outlined"
                 color="secondary"
-                sx={{ borderRadius: "1rem" }}
+                sx={{
+                  borderRadius: "1rem",
+                  WebkitAnimationName: "revert-layer",
+                }}
               >
-                see my photos
+                Edit my photos
               </Button>
             </Grid>
           </Grid>
@@ -116,12 +119,12 @@ function App() {
           </Grid>
         </Container>
       </main>
-      <footer style={{ backgroundColor: "grey", padding: "20px 0" }}>
+      <footer style={{ backgroundColor: "grey", padding: "10px 0" }}>
         <Typography variant="subtitle1" align="center" color="textSecondary">
           copyrights by TadteckInc
         </Typography>
       </footer>
-    </>
+    </div>
   );
 }
 
